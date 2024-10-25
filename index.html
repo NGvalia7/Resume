@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nino Gvalia - Interactive Resume</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Mouse Movement Effect -->
     <header>
-        <h1>Nino Gvalia</h1>
-        <p>Research Associate | Biochemistry Enthusiast | STEM Mentor</p>
+        <div class="layer" data-speed="5">
+            <h1>Nino Gvalia</h1>
+        </div>
+        <div class="layer" data-speed="10">
+            <p>Research Associate | Biochemistry Enthusiast | STEM Mentor</p>
+        </div>
     </header>
 
     <!-- Navigation Bar -->
@@ -27,37 +30,53 @@
     </nav>
 
     <!-- Main Sections -->
-    <section id="about">
+
+    <!-- About Section with Parallax Background -->
+    <section id="about" class="parallax">
         <h2>About Me</h2>
-        <p>A brief bio about yourself here...</p>
+        <p>I am Nino Gvalia, a Research Associate at the Gage Lab, Salk Institute, passionate about biochemistry, neurogenesis, and STEM education for underrepresented groups.</p>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
-        <p>Details about your education...</p>
+        <ul>
+            <li>MS in Biochemistry, SDSU (Current)</li>
+            <li>BS in Biochemistry, SDSU Georgia</li>
+        </ul>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        <p>Your work and research experience...</p>
+        <p>Research Associate at Gage Lab, Salk Institute, focusing on neurogenesis and modeling neurodegenerative and neuropsychiatric disorders using iPSCs.</p>
+        <p>Previous research on NF-κB signal transduction pathways at SDSU.</p>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <p>Your skills in biochemistry, software, lab techniques, etc...</p>
+        <ul>
+            <li>Biochemistry Research</li>
+            <li>iPSC Protocols and Neurogenesis</li>
+            <li>STEM Mentorship and Outreach</li>
+            <li>Advanced Laboratory Techniques</li>
+        </ul>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <p>Details about your key projects, like iPSC research...</p>
+        <p>Key projects include exploring the functional significance of adult-born neurons in memory acquisition and using iPSCs to model diseases like Alzheimer's, Schizophrenia, and Autism.</p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Include a form or your contact details...</p>
+        <p>Email: ninogvalia@example.com</p>
     </section>
 
-    <!-- Script Files -->
+    <!-- Script for Interactive Mouse Movement -->
     <script src="js/scripts.js"></script>
 </body>
 </html>
