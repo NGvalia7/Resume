@@ -1,12 +1,10 @@
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
+// Mouse Movement Interactivity
+document.addEventListener('mousemove', function(e) {
+    const layers = document.querySelectorAll('.layer');
+    layers.forEach(layer => {
+        const speed = layer.getAttribute('data-speed');
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 });
